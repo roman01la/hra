@@ -1,0 +1,22 @@
+{
+  "name": "gll",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "bun build --compile --outfile=./app src/core.ts",
+    "build:cpp": "zig build-lib src/bullet.cpp -dynamic -lc -lc++ -I/Users/romanliutikov/projects/vcpkg/packages/bullet3_arm64-osx/include/bullet -L/Users/romanliutikov/projects/vcpkg/packages/bullet3_arm64-osx/lib -lBulletDynamics -lBulletCollision -lLinearMath"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@gltf-transform/core": "^4.2.1",
+    "gl-matrix": "^3.4.4",
+    "glfw-n-api": "^0.0.4",
+    "nodegl": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.23"
+  }
+}
